@@ -26,7 +26,18 @@ public class Main {
 
         //task 3
         System.out.println("ДЗ2. Задание 3");
-
+        int numberOfPassengers=70;
+        int allWagonPlace=102;
+        int sitWagonPlace=60;
+        int standWagonPlace=allWagonPlace-sitWagonPlace;
+        if (numberOfPassengers>=102){
+            System.out.println("Свободных мест нет!");}
+        if (numberOfPassengers>=60){
+            if (numberOfPassengers<102)
+                System.out.println("В вагоне свободно "+(allWagonPlace-numberOfPassengers)+" стоячих мест");}
+        else {
+            System.out.println("В вагоне свободно "+(sitWagonPlace-numberOfPassengers)+" сидячих мест и "+(allWagonPlace-sitWagonPlace)+ " стоячих мест.");
+        }
     }
 
     }
