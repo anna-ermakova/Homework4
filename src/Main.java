@@ -32,7 +32,20 @@ public class Main {
             System.out.println("Ты можешь кататься только в сопровождении взрослого.");
         }else if (canNotRide){
             System.out.println("Ты слишком мал и не можешь кататься.");
+        }
 
+        //task3
+        System.out.println("Задание 3. Задача 3");
+
+        int one=12;
+        int two=512;
+        int free=7;
+        if (one>two && one>free) {
+            System.out.println(one + " - наибольшее число.");
+        }else if (two>one&&two>free) {
+            System.out.println(two + " - наибольшее число.");
+        }else if (free>one&&free>two){
+            System.out.println(free+ " - наибольшее число.");
         }
     }
 }
